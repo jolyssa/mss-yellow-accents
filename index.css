@@ -1,0 +1,654 @@
+/* --- FOR EVERYTHING --- */
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    --14px: 0.875rem; /*   */
+  --15px: 0.9375rem; /*used, .landing*/
+  --16px: 1rem;      /*used, a,  */
+  --17px: 1.0625rem; /* used, .pStandard, .button*/
+  --18px: 1.125rem;  /*used, .boldSpan  */
+  --20px: 1.25rem; 
+  --25px: 1.563rem; /* used, .biggerWords  */
+  --30px: 1.875rem; /*used, .logo */
+  --50px: 3.125rem;  /* used, h1, h3 */
+}
+
+html:focus-within{
+  scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif;}
+
+/* Styles for "buttons" */
+.button {
+    font-size: var(--17px);
+    font-weight: 700;
+    border-radius: 0.225em; /*0.2rem;*/
+    padding: 0.625em 1.375rem;
+    text-decoration: none;
+    color: black;
+    background: #ffcb04; 
+    max-width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #f3e082;
+}
+
+/* Styles for h1's */
+h1 {
+    font-size: var(--50px);
+    font-weight: 700;
+}
+
+.h1Styling {
+    margin-bottom: 0.625rem; 
+}
+
+/* Styles for h3's */
+h3 {
+    font-size: var(--25px);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Styles for bigger spans and paragraphs */
+.biggerWords {
+    font-size: var(--25px);
+}
+
+/* Styles for a's */
+a {
+    font-size: var(--16px);
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles for standard paragraphs*/
+.pStandard {
+    font-size: var(--17px);
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 60ch;
+}
+
+/* Bold Spans */
+.boldSpan {
+    font: 600 var(--18px) 'Inter', sans-serif;
+}
+
+/* Styles for list items */
+.boldLiOne {
+    display: inline;
+    font-weight: 700;
+    margin-right: 0.3125em;
+    text-transform: uppercase;
+}
+
+.boldLiTwo {
+    display: inline;
+    font-weight: 700;
+    margin-right: 0.875em;
+}
+
+/* --- SECTIONS --- */
+/* Header */
+header {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5.625em;
+    margin-top: 1.75em;
+    padding: 0 1.875rem 0 1.563rem; 
+}
+
+header .logo {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: var(--20px);
+    font-weight: 900;
+    order: 1
+}
+
+header .logo a:hover {
+    color:#000;
+}
+
+header a:hover {
+    color: grey;
+}
+
+.icon {
+    visibility: hidden;
+    order: 2
+}
+
+header nav {
+    order: 3;
+}
+
+
+/* Create Custom Landing Section */
+.createCustomLanding {
+    display: flex;
+    margin-bottom: 9.375em; 
+}
+
+.createCustomLanding .wrapper {
+    flex: 1;
+    padding: 1em;
+}
+
+.createCustomLanding > .wrapper {
+    padding: 0 1.875rem 0 1.563rem; 
+}
+
+.createCustomLanding img {
+    width: 100%;
+    height: auto;
+}
+
+.createCustomLanding .landing {
+    display: block;
+    text-transform: uppercase;
+    font: 700 var(--15px) 'Inter', sans-serif;
+    margin: 10px 0 20px 0;
+}
+
+.createCustomLanding .h1Wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.createCustomLanding h1 {
+    margin: 0;
+    max-width: 20ch;
+}
+
+.createCustomLandingLinkWrapper {
+    margin-top: 1.563rem;
+}
+
+.createCustomLandingLinkWrapper span + span {
+    display: inline-block;
+    font-size: var(--17px);
+    font-weight: 700;
+    margin-left: 1.25rem;
+    margin-top: 1.875rem;
+}
+
+/* Everything Included Section */
+.firstSectionWrapper {
+    text-align: center;
+}
+
+.firstSectionWrapper h1 {
+    margin-bottom: 0.625rem;    
+}
+
+.firstSectionWrapper .biggerWords {
+    display: block;
+    margin-bottom: 3.75rem;
+}
+
+.everythingIncluded  .padding {
+    padding-right: calc(100px + 1.5625vw);
+    padding-left: calc(10px + 1.5625vw);
+    margin-bottom: calc(150px + 1.5625vw)
+}
+
+.secondSectionWrapper {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    place-items: center;
+}
+
+.secondSectionWrapper img {
+    width: 75%;
+}
+
+/* in Mintues section */
+.inMinutes .wrapper {
+    text-align: center;
+}
+
+.inMinutes .biggerWords {
+    display: block;
+    margin-bottom: 1.875rem;
+}
+
+.inMinutes .padding {
+    padding: 0 1.875rem 0 1.563rem;
+    margin-bottom: 9.375em; 
+}
+
+.inMinutes .ourTeamWrapper {
+    display: grid;
+    gap: 0 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.ourTeamWrapper h3 {
+    padding-top: 0.625rem;
+}
+
+.ourTeamWrapperChild .pStandard{
+    max-width: 50ch;
+}
+.inMinutes img {
+    width: 100%;
+}
+
+/* Testimonials section */
+.testimonials {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonialsWrapperSection {
+    margin-bottom: 5.625em;
+}
+
+.testimonialsWrapperSection img {
+    width: 10%;
+    margin: 0.625em 0;
+}
+
+.testimonials .biggerWords {
+    max-width: 30ch;
+    text-align:center;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: var(--20px) !important;
+}
+
+.testimonials span {
+    display: block;
+}
+
+/* Get Started section */
+.getStarted {
+    text-align: center;
+    margin: 12.5em 0;
+}
+
+.getStarted .h1Styling {
+    margin-top: 0;
+}
+
+.getStarted .biggerWords {
+    display: block;
+    margin-bottom: 2.1875em;
+}
+
+.getStarted .button {
+    margin-right: 0.625em;
+}
+
+
+/* Contact Us */
+/* Contact Form Section */
+.contactForm {
+    padding: 0 6.25rem 6.25rem 6.25rem;
+}
+
+.contactForm .wrapper {
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.contactForm .biggerWords {
+    display: block;
+    margin-bottom: 1.875rem;
+}
+
+.contactFormWrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1.875rem;
+}
+
+.contactForm form {
+    background-color: #f4f4f4;
+    padding: 1.875rem;
+    border-radius: 0.225em;
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.contactForm label {
+    font-size: var(--17px);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.3125rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 0.225em;
+    font-size: var(--17px);
+    margin-bottom: 1.25rem;
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.contactForm button {
+    text-decoration: none;
+    color: white;
+    background: #000;
+    max-width: 100%;
+    border: none;
+    cursor: pointer;  
+}
+
+.contactForm button:hover {
+    background: #3f3f3f;
+}
+
+/* Footer */
+footer a:hover {
+    color:#3f3f3f;
+    text-decoration: underline;
+}
+
+/* Hamburger nav for smaller screens */
+/* all sections at width 100% */
+
+
+
+/****** MEDIA QUERIES ******/
+/* Extra small devices (phones, 639px and down) */
+ @media only screen and (max-width: 639px) {
+    /* General Styling */
+    body {
+        padding: 0 0.3125rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.25em;
+     }
+
+    .biggerWords {
+        font-size: var(--20px);
+    }
+    
+    /****SECTIONS****/
+    /* Header */
+ /* change to hamburger menu */
+    header {
+         overflow: hidden;
+        position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  header nav {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  nav a {
+    color: black;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    font-size: var(--17px);
+    display: block;
+    border: 1px solid black;
+  }
+  
+  /* Style the hamburger menu */
+  nav a.icon {
+    background: black;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a black background color on mouse-over */
+  nav a:hover {
+    background: black;
+    color: white;
+  } 
+  
+
+  header .logo {
+    order: 1;
+  }
+
+  .icon {
+    visibility: visible;
+    order: 3
+ }
+
+ header nav {
+    order: 2;
+ }
+
+ /* Create Custom Landing Section */
+ .createCustomLanding {
+     display: block;
+    }
+
+    .createCustomLandingLinkWrapper {
+        margin-bottom: 3.125rem;
+    }
+
+    /* Everything Included section */
+    .secondSectionWrapper {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .everythingIncluded .padding {
+        padding: 0 0.625rem;
+        margin: 0;
+    }
+
+    .box1 {
+        order: 1;
+    }
+    .box2 {
+        order: 2;
+    }
+    .box3 {
+        order: 4;
+    }
+    .box4 {
+        order: 3;
+    }
+    .box5 {
+        order: 5;
+    }
+    .box6 {
+        order: 6;
+    }
+    .box7 {
+        order: 8;
+    }
+    .box8 {
+        order: 7; 
+    }
+    .box9 {
+        order: 9;
+    }
+    .box10 {
+        order: 10;
+    }
+
+    /* In Minutes Section */
+     .inMinutes .ourTeamWrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    .contactForm {
+        width: 100%;
+        padding: 0 var(--17px);
+        text-align: left;
+        margin-bottom: 6.25rem;
+    }
+
+    /* Adjust input styles */
+    .contactForm input[type="text"],
+    .contactForm textarea {
+        width: 100%;
+        padding: var(--17px);
+        margin-bottom: var(--17px);
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    /* Footer */
+    .boldLiTwo {
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px-767px) */
+@media only screen and (max-width: 767px) {
+      /* General Styling */
+    body {
+        padding: 0 0.3125rem;
+        margin: 0;
+        text-align: center;
+    }
+    
+    h1 {
+       font-size: 2.5em;
+    }
+
+    .biggerWords {
+        font-size: var(--20px);
+    }
+
+    /* SECTIONS */
+    /* Header */
+    header {
+        display: block;
+    }
+    /* change to hamburger menu */
+
+    /* Create Custom Landing Section */
+    .createCustomLanding {
+        display: block;
+    }
+
+    .createCustomLandingLinkWrapper {
+        margin-bottom: 3.125rem;
+    }
+
+    /* Everything Included section */
+    .everythingIncluded .padding {
+        padding: 0 0.625rem;
+        margin: 0;
+    }
+
+    /* In Minutes Section */
+     .inMinutes .ourTeamWrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        width: 100%;
+    }
+
+    /* Contact Us Form */
+    .contactForm {
+        text-align: left;
+    }
+
+    .getStarted {
+        padding: 0.625rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px-1079px) */
+@media only screen and (max-width: 1079px) {
+    h1 {
+        font-size: 2.5em;
+     }
+
+     .biggerWords {
+        font-size: var(--20px);
+    }
+
+     /* Everything Included section */
+    .everythingIncluded .padding {
+        padding: 0 0.625rem;
+        margin-bottom: 6.25rem;
+    }
+    /* In Minutes Section */
+    .inMinutes .padding {
+        padding: 0 1.875rem 0 1.563rem;
+        margin-bottom: 6.255rem; 
+    }
+
+    .boldLiTwo {
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+/* Large devices (laptops/desktops, 1080px-1199px) */
+@media only screen and (max-width: 1199px) {
+    .createCustomLanding {
+        padding: 0 3.125rem;
+    }
+}
+
+   
+/* Extra large devices (large laptops and desktops, 1200px-1439px) */
+@media only screen and (min-width: 1200px) {...}
+
+/*  XX-large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+    body {
+        margin: 0 6.25rem;
+     }
+
+     header nav {
+        margin-right: 6.25rem;
+     }
+ 
+     footer {
+         margin: 0 auto;
+         width: 50%;
+         text-align: center;
+         white-space: nowrap;
+     }
+ }
+ 
