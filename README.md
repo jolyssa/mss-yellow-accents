@@ -40,7 +40,7 @@ Overall, creating the Moji Static Studios website was a rewarding journey that e
 
 ## Examples:
 
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these other examples:
 
 **My Portfolio:** https://github.com/jolyssa/live-portfolio
 
