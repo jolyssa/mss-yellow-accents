@@ -42,9 +42,9 @@ Overall, creating the Moji Static Studios website was a rewarding journey that e
 
 Take a look at these couple examples that I have in my own portfolio:
 
-**My Portfolio:** https://jolyssa.info/
+**My Portfolio:** https://github.com/jolyssa/live-portfolio
 
-**Elephant Thoughts - Mistissini:** https://mistissini.netlify.app/events
+**Elephant Thoughts - Mistissini:** https://github.com/jolyssa/e.t
 
 **Codewars Solutions: Codewars Solutions:** https://github.com/jolyssa/codewars-solutions
 
