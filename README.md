@@ -11,7 +11,7 @@ I had the exciting opportunity to create the Moji Static Studios website, where 
 
 The process started with brainstorming sessions to nail down the overall look and feel. I wanted the website to be visually appealing and user-friendly, so I focused on clean layouts, engaging graphics, and smooth navigation. I ensured the site captured the vibrant energy of Moji Static Studios while maintaining a professional edge that resonates with potential clients.
 
-Throughout the development phase, I utilised my skills in HTML, CSS, and JavaScript to bring the design to life. I paid special attention to making the website responsive, ensuring it looks great on any device—whether you're on a laptop, tablet, or smartphone. The goal was to create an experience where users could easily explore the services offered and connect with the team.
+Throughout the development phase, I utilised my skills in HTML, CSS, and JavaScript to bring the design to life. The goal was to create an experience where users could easily explore the services offered and connect with the team.
 
 Incorporating client feedback was also key to the project. I collaborated closely with the Moji Static Studios team to understand their vision and adjust the site based on their insights. This collaborative approach allowed me to fine-tune the content and layout, ensuring it truly represented the brand's identity.
 
