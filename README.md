@@ -1,5 +1,5 @@
 # Moji Static Studios
-Moji Static Studios is a cutting-edge web development company known for its expertise in creating visually stunning and user-centric websites. Their team excels at blending technical proficiency with creative design to deliver responsive, accessible, and high-performing digital experiences. With a strong focus on aligning each project with clients' brand identities and business objectives, Moji Static Studios has earned a reputation for innovation and excellence in web development. Their approach ensures that every website they build is both aesthetically engaging and functionally robust, driving results for businesses across various industries
+Moji Static Studios is a cutting-edge web development company known for its expertise in creating visually stunning and user-centric websites. Their team excels at blending technical proficiency with creative design to deliver responsive, accessible, and high-performing digital experiences. With a strong focus on aligning each project with clients' brand identities and business objectives, Moji Static Studios has earned a reputation for innovation and excellence in web development. Their approach ensures that every website they build is both aesthetically engaging and functionally robust, driving results for businesses across various industries.
 
 Link to project: https://mojistaticstudios.netlify.app/
 
@@ -11,7 +11,7 @@ I had the exciting opportunity to create the Moji Static Studios website, where 
 
 The process started with brainstorming sessions to nail down the overall look and feel. I wanted the website to be visually appealing and user-friendly, so I focused on clean layouts, engaging graphics, and smooth navigation. I ensured the site captured the vibrant energy of Moji Static Studios while maintaining a professional edge that resonates with potential clients.
 
-Throughout the development phase, I utilised my skills in HTML, CSS, and JavaScript to bring the design to life. I paid special attention to making the website responsive, ensuring it looks great on any device—whether you're on a laptop, tablet, or smartphone. The goal was to create an experience where users could easily explore the services offered and connect with the team.
+Throughout the development phase, I utilised my skills in HTML, CSS, and JavaScript to bring the design to life. The goal was to create an experience where users could easily explore the services offered and connect with the team.
 
 Incorporating client feedback was also key to the project. I collaborated closely with the Moji Static Studios team to understand their vision and adjust the site based on their insights. This collaborative approach allowed me to fine-tune the content and layout, ensuring it truly represented the brand's identity.
 
@@ -40,11 +40,11 @@ Overall, creating the Moji Static Studios website was a rewarding journey that e
 
 ## Examples:
 
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these other examples:
 
-**My Portfolio:** https://jolyssa.info/
+**My Portfolio:** https://github.com/jolyssa/live-portfolio
 
-**Elephant Thoughts - Mistissini:** https://mistissini.netlify.app/events
+**Elephant Thoughts - Mistissini:** https://github.com/jolyssa/e.t
 
 **Codewars Solutions: Codewars Solutions:** https://github.com/jolyssa/codewars-solutions
 
