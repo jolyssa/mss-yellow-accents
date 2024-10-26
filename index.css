@@ -3,34 +3,167 @@
     box-sizing: border-box;
   }
 
-html {
-    --14px: 0.875rem; /*   */
-  --15px: 0.9375rem; /*used, .landing*/
-  --16px: 1rem;      /*used, a,  */
-  --17px: 1.0625rem; /* used, .pStandard, .button*/
-  --18px: 1.125rem;  /*used, .boldSpan  */
-  --20px: 1.25rem; 
-  --25px: 1.563rem; /* used, .biggerWords  */
-  --30px: 1.875rem; /*used, .logo */
-  --50px: 3.125rem;  /* used, h1, h3 */
+:root {
+    /* Fonts */
+    --caveat: "Caveat", cursive;
+    --noto: "Noto Sans", sans-serif;
+  
+
+  /* Font-Sizes */
+  --h1: clamp(2rem, 2vw + 1rem, 2.25rem);
+  --h2: clamp(1.625rem, 2vw + 1rem, 1.875rem);
+  --h3: clamp(1.375rem, 2vw + 1rem, 1.625rem);
+  --h4: clamp(1.125rem, 2vw + 1rem, 1.375rem);
+  --p: clamp(1rem, 2vw + 1rem, 1.063rem);
+  --span: #4169E1;
+
+  /* Colours */
+  /*?Light Mode*/
+  --white-bg-text: #1A1A3D;
+  --white-bg-bg: #FFFFF0;
+  --white-bg-primary: #4169E1;
+  --white-bg-accent: #FFD700;
+  /* --white-bg-off-primary: #dfe3f0; */
+  /* --white-bg-secondary: #d29abf; */
+  /* --white-bg-off-accent: #e1d6e6; */
+
+  /*?Dark Mode*/
+  --dark-bg-text: #E0E0E3;
+  --dark-bg-bg: #2A2E45;
+  --dark-bg-primary: #4169E1;
+  --dark-bg-accent: #D1B26F;
 }
 
 html:focus-within{
   scroll-behavior: smooth !important;
 }
 
-body {
-    font-family: 'Inter', sans-serif;}
+/************REPEATED STYLES****************/
+/* Selectors */
+* {
+    font-family: var(--noto);
+    box-sizing: border-box;
+    margin: 0;
+    transition: 0.3s;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 1rem;
+    background: var(--white-bg-bg);
+    color: var(--white-bg-text);
+    margin: 0 3.5rem;
+    overflow-x: hidden;
+  }
+  
+  /* section {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+  } */
+  
+  a {
+    color: var(--white-bg-text);
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: var(--h1);
+  }
+  
+  h2 {
+    font-size: var(--h2);
+  }
+  
+  h3 {
+    font-size: var(--h3);
+  }
+  
+  h4 {
+    font-size: var(--h4);
+  }
+  
+  p {
+    font-size: var(--p);
+    line-height: 2.5rem;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  img:hover,
+  svg:hover {
+    opacity: 0.5;
+  }
+  
+  /* Classes */
+  .span {
+    color: var(--span);
+  }
+  
+  /* Classes - Divs */
+  .button {
+    border: none;
+    background: var(--white-bg-primary);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  
+  .button-2 {
+    border: none;
+    background: #dfcee1;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  /* .off-primary {
+    background: #dfe3f0;
+  }
+  
+  .off-accent {
+    background: #e1d6e6;
+  } */
+  
+  /* Animations */
+  .raise-primary:hover,
+  .raise-primary:focus {
+    background: #b0dbf4;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--white-bg-primary);
+    transform: translateY(-0.25em);
+  }
+  
+  .raise-off-primary:hover,
+  .raise-off-primary:focus {
+    background: var(--white-bg-off-primary);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--white-bg-primary);
+    transform: translateY(-0.25em);
+  }
+  
+  .raise-accent:hover,
+  .raise-accent:focus {
+    background: #e2d8e3;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--white-bg-accent);
+    transform: translateY(-0.25em);
+  }
 
 /* Styles for "buttons" */
 .button {
-    font-size: var(--17px);
+    font-size: var(--p);
     font-weight: 700;
-    border-radius: 0.225em; /*0.2rem;*/
+    border-radius: 3.6px; /*0.2rem;*/
     padding: 0.625em 1.375rem;
     text-decoration: none;
-    color: black;
-    background: #ffcb04; 
+    color: var(--white-bg-text);
+    background: var(--white-bg-primary); 
     max-width: 100%;
     transition: background 0.3s ease-in-out;
 }
